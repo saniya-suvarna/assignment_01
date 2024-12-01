@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Cakes | About Us</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        h1, h2, h3 {
+            color: #f8b400;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        button {
+            background-color: #f8b400;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .search-bar {
+            display: flex;
+        }
+
+        .search-bar input {
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .search-bar button {
+            padding: 5px;
+            background-color: #f8b400;
+            border: 1px solid #ddd;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .hero-content h2 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        
+        .about-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .about-section h3 {
+            font-size: 2em;
+            color: #f8b400; 
+        }
+
+        .about-section p {
+            font-size: 1.2em;
+            color: black; 
+            max-width: 600px;
+            margin: auto;
+        }
+
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .social-links li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+
+<nav>
+    <div class="nav-logo">
+        <h1>Delicious Cakes</h1>
+    </div>
+    <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="opcake.html">Cakes</a></li>
+        <li><a href="cat.html">Categories</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Search cakes...">
+        <button onclick="searchCakes()">Search</button>
+    </div>
+</nav>
+
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>About Us</h2>
+        <p>Learn more about our delicious cakes!</p>
+    </div>
+</section>
+
+<section class="about-section">
+    <h3>Our Story</h3>
+    <p>At Delicious Cakes, we believe that every occasion deserves a beautiful cake. With a passion for baking and a commitment to quality, we use only the finest ingredients to create mouthwatering cakes that are as delightful to eat as they are to look at. Our team of skilled bakers crafts each cake with care, ensuring every bite is a celebration of flavor.</p>
+    <p>Whether it's a birthday, wedding, or any special moment, we’re here to help you celebrate with a cake that’s uniquely yours. Join us in our journey of sweetness and let us make your celebrations unforgettable!</p>
+</section>
+
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Delicious Cakes. All rights reserved.</p>
+        <ul class="social-links">
+         
+            <li><img src="facebook.png" alt="Facebook" height="15"><a href="#">Facebook</a></li>
+            <li><img src="insta.png" alt="insta" height="15"><a href="#">Instagram</a></li>
+            <li><img src="tweet.png" alt="Twitter" height="15"><a href="#">Twitter</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+<script>
+    function searchCakes() {
+        var searchValue = document.getElementById('search').value;
+        alert('Searching for: ' + searchValue);
+    }
+</script>
+
+</body>
+</html>

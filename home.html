@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Cakes | Home</title>
+    <link rel="stylesheet" href="cake.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-logo">
+            <h1>Delicious Cakes</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="opcake.html">Cakes</a></li>
+            <li><a href="cat.html">Categories</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search cakes...">
+            <button onclick="searchCakes()">Search</button>
+        </div>
+    </nav>
+
+ 
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Delicious Cakes!</h2>
+            <p>Find your favorite cakes for every occasion</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+
+
+    <section class="featured-cakes">
+        <h2>Best-Selling Cakes</h2>
+        <div class="cake-grid">
+            <div class="cake-item" data-name="Chocolate Cake">
+                <img src="chocake.jpg" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>Price: ₹850</p>
+            </div>
+            <div class="cake-item" data-name="Vanilla Cake">
+                <img src="vanilla.jpg" alt="Vanilla Cake">
+                <h3>Vanilla Cake</h3>
+                <p>Price: ₹700</p>
+            </div>
+            <div class="cake-item" data-name="Red Velvet Cake">
+                <img src="redvel.jpg" alt="Red Velvet Cake">
+                <h3>Red Velvet Cake</h3>
+                <p>Price: ₹800</p>
+            </div>
+            <div class="cake-item" data-name="Black Forest Cake">
+                <img src="blackfor.jpg" alt="Black Forest Cake">
+                <h3>Black Forest Cake</h3>
+                <p>Price: ₹808</p>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="cake-categories">
+        <h2>Cake Categories</h2>
+        <div class="category-grid">
+            <div class="category-item">
+                <img src="birthday.jpg" alt="Birthday Cakes">
+                <h3>Birthday Cakes</h3>
+            </div>
+            <div class="category-item">
+                <img src="wedcake.jpg" alt="Wedding Cakes">
+                <h3>Wedding Cakes</h3>
+            </div>
+            <div class="category-item">
+                <img src="custom.jpg" alt="Custom Cakes">
+                <h3>Custom Cakes</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Delicious Cakes. All rights reserved.</p>
+            <ul class="social-links">
+              
+            <li><img src="facebook.png" alt="Facebook" height="15"><a href="#">Facebook</a></li>
+            <li><img src="insta.png" alt="insta" height="15"><a href="#">Instagram</a></li>
+            <li><img src="tweet.png" alt="Twitter" height="15"><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="cake.js"></script>
+</body>
+</html>

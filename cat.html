@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Cakes | Categories</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white; 
+        }
+
+       
+        nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+h1{
+    color:#f8b400;
+}
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+        }
+        
+
+        .search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    padding: 5px;
+    background-color: #f8b400;
+    border: 1px solid #ddd;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+        .hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+        .hero h2 {
+            font-size: 2.5em;
+            color: #f8b400; 
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: black; 
+        }
+
+       
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .category-item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .category-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .category-item h3 {
+            margin: 10px 0;
+            color: #f8b400; 
+        }
+
+        .category-item p {
+            color: black; 
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-logo">
+        <h1>Delicious Cakes</h1>
+    </div>
+    <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="opcake.html">Cakes</a></li>
+        <li><a href="cat.html">Categories</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Search cakes...">
+        <button onclick="searchCakes()">Search</button>
+    </div>
+</nav>
+
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Explore Cake Categories</h2>
+        <p>Choose the perfect cake for every occasion</p>
+    </div>
+</section>
+
+<section class="category-grid">
+    <div class="category-item">
+        <img src="birthday.jpg" alt="Birthday Cakes">
+        <h3>Birthday Cakes</h3>
+        <p>Celebrate your birthday with delicious cakes.</p>
+    </div>
+    <div class="category-item">
+        <img src="wedcake.jpg" alt="Wedding Cakes">
+        <h3>Wedding Cakes</h3>
+        <p>Perfect cakes for your big day.</p>
+    </div>
+    <div class="category-item">
+        <img src="custom.jpg" alt="Custom Cakes">
+        <h3>Custom Cakes</h3>
+        <p>Design your dream cake for any occasion.</p>
+    </div>
+</section>
+
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Delicious Cakes. All rights reserved.</p>
+        <ul class="social-links">
+           
+            <li><img src="facebook.png" alt="Facebook" height="15"><a href="#">Facebook</a></li>
+            <li><img src="insta.png" alt="insta" height="15"><a href="#">Instagram</a></li>
+            <li><img src="tweet.png" alt="Twitter" height="15"><a href="#">Twitter</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+<script>
+    function searchCakes() {
+        var searchValue = document.getElementById('search').value;
+        alert('Searching for: ' + searchValue);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Cakes | Contact Us</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color:black;
+            text-decoration: none;
+        }
+
+ 
+        .search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    padding: 5px;
+    background-color: #f8b400;
+    border: 1px solid #ddd;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+        .hero h2 {
+            font-size: 2.5em;
+            color: #f8b400; 
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: black; 
+        }
+        .contact-section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .contact-section h3 {
+            font-size: 2em;
+            color: #f8b400; 
+        }
+
+        .contact-section p {
+            color: black; 
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #f8b400;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #d19f00;
+        }
+
+      
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+
+<nav>
+    <div class="nav-logo">
+        <h1 style="color: #f8b400;">Delicious Cakes</h1>
+    </div>
+    <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="opcake.html">Cakes</a></li>
+        <li><a href="cat.html">Categories</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Search cakes...">
+        <button onclick="searchCakes()">Search</button>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Get in Touch with Us</h2>
+        <p>We'd love to hear from you!</p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <h3>Contact Us</h3>
+    <p>If you have any questions or feedback, please fill out the form below:</p>
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Delicious Cakes. All rights reserved.</p>
+        <ul class="social-links">
+            <li><img src="facebook.png" alt="Facebook" height="15"><a href="#">Facebook</a></li>
+            <li><img src="insta.png" alt="insta" height="15"><a href="#">Instagram</a></li>
+            <li><img src="tweet.png" alt="Twitter" height="15"><a href="#">Twitter</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+<script>
+    function searchCakes() {
+        var searchValue = document.getElementById('search').value;
+        alert('Searching for: ' + searchValue);
+    }
+</script>
+
+</body>
+</html>
